@@ -1,0 +1,22 @@
+{
+  "name": "assignment_node_dictionary_reader",
+  "version": "1.0.0",
+  "description": "I CAN HAS SPELLZ IN \"Node\"? K THNX BYE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rttomlinson/assignment_node_dictionary_reader.git"
+  },
+  "author": "Renzo Tomlinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rttomlinson/assignment_node_dictionary_reader/issues"
+  },
+  "homepage": "https://github.com/rttomlinson/assignment_node_dictionary_reader#readme",
+  "dependencies": {
+    "chalk": "^1.1.3"
+  }
+}
