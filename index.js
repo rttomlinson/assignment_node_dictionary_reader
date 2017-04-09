@@ -4,7 +4,9 @@
 const services = require('./lib/keyval');
 
 
-//Start the app
-services.init();
+//Create new session
+let session = services.init();
+//Start the session
+session.run();
 
 
