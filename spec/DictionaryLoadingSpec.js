@@ -7,15 +7,15 @@ describe('Loader module', function() {
             loader = new Loader();
         });
         it('collects the files names of all json files sets it to the internal dictionaries property and return the list of file names', function() {
-            expect(loader.scan('./data/')).toEqual(['dic1', 'dic2', 'dictionary']);
-            expect(loader._dictionaries).toEqual(['dic1', 'dic2', 'dictionary']);
+            expect(loader.scan('./data/')).toEqual(['dic1', 'dic2', 'dic3', 'dictionary']);
+            expect(loader._dictionaries).toEqual(['dic1', 'dic2', 'dic3', 'dictionary']);
         });
         it('calling scan  with a different directory should replace the current dictionaries and return the list of file names', function() {
             expect(loader.scan('./data2/')).toEqual(['yo1', 'yo2', 'yotionary']);
             expect(loader._dictionaries).toEqual(['yo1', 'yo2', 'yotionary']);
         });
         it('calling scan on an already populated dictionary with a different directory should replace the current dictionaries and return the list of file names', function() {
-            expect(loader.scan('./data/')).toEqual(['dic1', 'dic2', 'dictionary']);
+            expect(loader.scan('./data/')).toEqual(['dic1', 'dic2', 'dic3', 'dictionary']);
             expect(loader.scan('./data2/')).toEqual(['yo1', 'yo2', 'yotionary']);
             expect(loader._dictionaries).toEqual(['yo1', 'yo2', 'yotionary']);
         });
